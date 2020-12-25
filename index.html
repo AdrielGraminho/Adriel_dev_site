@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adriel Graminho</title>
+    <link href="./css/estilo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <a name="inicio"></a>
+
+    <header class="menu-principal ">
+
+        <main>
+            <div class="header1">
+
+                <div class="logo">
+                    <img class="img-cabeçalho" src="./img/logo.png">
+
+                </div>
+                <div class="redes-sociais">
+
+                    <a href="https://github.com/AdrielGraminho">
+                        <img class="img-cabeçalho" src="./img/git.png" />
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/adriel-graminho-463b601b4/">
+                        <img class="img-cabeçalho" src="./img/linkedin.png" />
+                    </a>
+
+                </div>
+            </div>
+
+        </main>
+
+    </header>
+
+    <div class="header2">
+        <main>
+            <div class="menu">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#redes">Redes Sociais</a></li>
+
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+
+            </div>
+
+
+
+
+
+            <!--  <div class="busca">
+            <input placeholder="Pesquisar" type="text" />
+
+    </div>
+    -->
+        </main>
+
+
+    </div>
+
+
+    <div class="cabecalho-espaco"></div>
+
+
+    <script>
+        function init() {
+            var cabecalho = document.querySelector('.header2');
+            var cabecalhoEspaco = document.querySelector('.cabecalho-espaco');
+            var cabecalhoOffset = cabecalho.offsetTop;
+
+            function verificaCabecalho() {
+                var scrollTop = window.scrollY;
+                var cabecalhoAltura = cabecalho.offsetHeight;
+
+                if (scrollTop >= cabecalhoOffset) {
+                    // rolagem da página passou do elemento, vamos fixá-lo
+                    cabecalho.classList.add('header2--fixo');
+
+                    // ativa cabecalho-espaco para ocupar o espaço perdido
+                    cabecalhoEspaco.style.height = cabecalhoAltura + 'px';
+                } else {
+                    // retira a classe adicional do elemento
+                    cabecalho.classList.remove('header2--fixo');
+
+                    // retira a altura do cabecalho-espaco
+                    cabecalhoEspaco.style.height = 0;
+                }
+            }
+
+            window.addEventListener('scroll', verificaCabecalho);
+            window.addEventListener('resize', verificaCabecalho);
+        }
+
+        window.addEventListener('load', init);
+    </script>
+
+    <div class="slider1 ">
+        <ul>
+            <li><img src="./img/imagem2.png"></li>
+            <li><img src="./img/imagem1.png"></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <main>
+            <div class="inicio">
+                <h1>Bem Vindo!</h1>
+                <br> Ter seu próprio site nunca esteve tão ao seu alcance!
+            </div>
+
+            <a name="redes"></a>
+            <div class="redes">
+                <figure>
+                    <a href="https://github.com/AdrielGraminho"><img src="./img/git2.png"></a>
+                    <figcaption>
+                        <h1>GitHub</h1>
+                        <br>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <a href="https://www.linkedin.com/in/adriel-graminho-463b601b4/"><img src="./img/linkedin2.png"></a>
+                    <figcaption>
+                        <h1>Linkedin</h1>
+                    </figcaption>
+                </figure>
+
+            </div>
+
+            <a name="sobre"></a>
+            <div class="sobre">
+                <br>
+                <h1>Sobre</h1>
+                <br>
+                <div class="texto"> Adriel Graminho é um programador web que domina as principais tecnologias da web, tais como php, mysql, javascript, css e html...</div>
+            </div>
+
+            <a name="contato"></a>
+            <div class="contato">
+                <br>
+                <h1>Contato</h1>
+                <br>
+                <div class="texto2">
+                    <img src="./img/wpp.png"></a>
+                    Whatsapp: 55 51 99186-2443 <br><br>
+                    <img src="./img/email.png"></a>
+                    E-mail: adrielgraminho@gmail.com
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <div class="slider ">
+        <ul>
+            <li><img src="./img/site1.png"></li>
+            <li><img src="./img/site2.png"></li>
+            <li><img src="./img/site3.png"></li>
+        </ul>
+    </div>
+    <div class="footer">
+        <div class="textofooter">
+            <img src="./img/wpp.png"></a>
+            Whatsapp: 55 51 99186-2443<br>
+            <img src="./img/email.png"></a>
+            E-mail: adrielgraminho@gmail.com
+        </div>
+    </div>
+
+    <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5551991862443" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+</body>
+
+
+</html>
