@@ -7,10 +7,20 @@
 }
 
 .redes-sociais {
-    width: 50%;
+    width: 30%;
 }
 
 .header1 {
     height: 100px;
     padding-left: 25px;
+}
+
+.whatsapp-link {
+    width: 100px;
+    height: 100px;
+    font-size: 75px;
+}
+
+.fa-whatsapp {
+    margin-top: 15px;
 }

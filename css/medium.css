@@ -14,3 +14,13 @@
     height: 60px;
     padding: 8px;
 }
+
+.whatsapp-link {
+    width: 60px;
+    height: 60px;
+    font-size: 45px;
+}
+
+.fa-whatsapp {
+    margin-top: 8px;
+}

@@ -10,7 +10,12 @@
     width: 20%;
 }
 
-.header1 {
+.whatsapp-link {
+    width: 60px;
     height: 60px;
-    padding: 8px;
+    font-size: 45px;
+}
+
+.fa-whatsapp {
+    margin-top: 8px;
 }
