@@ -15,6 +15,14 @@
     padding-left: 25px;
 }
 
+.header2 {
+    height: 100px;
+}
+
+.header2 ul li {
+    padding: 25px;
+}
+
 .whatsapp-link {
     width: 100px;
     height: 100px;
