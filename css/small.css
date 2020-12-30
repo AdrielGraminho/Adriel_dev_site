@@ -23,6 +23,11 @@
     padding: 25px;
 }
 
+.menu ul li:hover {
+    height: 50px;
+    border-bottom: rgb(255, 0, 0) 3px solid;
+}
+
 .whatsapp-link {
     width: 100px;
     height: 100px;

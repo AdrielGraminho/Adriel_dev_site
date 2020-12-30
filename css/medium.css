@@ -19,6 +19,11 @@
     height: 50px;
 }
 
+.menu ul li:hover {
+    height: 40px;
+    border-bottom: rgb(255, 0, 0) 3px solid;
+}
+
 .whatsapp-link {
     width: 60px;
     height: 60px;
