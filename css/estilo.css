@@ -69,11 +69,6 @@
         float: left;
     }
     
-    .menu ul li:hover {
-        height: 40px;
-        border-bottom: rgb(255, 0, 0) 3px solid;
-    }
-    
     .menu a {
         color: white;
         text-decoration: none;
